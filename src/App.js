@@ -8,26 +8,7 @@ const App = () => {
     // setTasks changes the state
     const [showAddTask, setShowAddTasks] = useState (false)
     const [tasks,setTasks] = useState (
-      [
-          {
-              id: 1,
-              text: "lets get food baba",
-              day: "Feb 5th at 2:30pm",
-              reminder: false,
-          },
-          {
-              id: 2,
-              text: "lets get drinks baba",
-              day: "Feb 5th at 2:30pm",
-              reminder: false,
-          },
-          {
-              id: 3,
-              text: "lets get poker baba",
-              day: "Feb 5th at 2:30pm",
-              reminder: false,
-          }
-      ]
+      []
   )
 
   // add Tassk
