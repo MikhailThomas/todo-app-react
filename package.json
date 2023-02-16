@@ -1,4 +1,7 @@
 {
+  "name": "todo-app-react",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
     "-": "^0.0.1",
     "@reduxjs/toolkit": "^1.9.2",
@@ -15,5 +18,29 @@
     "react-scripts": "5.0.1",
     "serve": "^14.2.0",
     "web-vitals": "^2.1.4"
-  }
-}
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "server":"json-server --watch db.json --port 5000"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }}
