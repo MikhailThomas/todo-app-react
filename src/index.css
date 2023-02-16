@@ -4,10 +4,12 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
 }
 
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: #FEFBE9;
 }
 
 .container {
@@ -15,9 +17,10 @@ body {
   margin: 30px auto;
   overflow: auto;
   min-height: 300px;
-  border: 1px solid steelblue;
+  border: 1px solid #183A1D;
   padding: 30px;
   border-radius: 5px;
+  background-color: #E1EEDD;
 }
 
 .header {

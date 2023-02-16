@@ -1,9 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit'
+
 export const counterSlice = createSlice({
   name: 'tasks',
   initialState: [],
   reducers: {
-    AddTask: (state, action) => {
+    AddTask: (state) => {
       state.value += 1
     },
     DeleteTask: (state) => {
