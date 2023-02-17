@@ -1,8 +1,11 @@
 import { useState } from "react"
+// import PropTypes from 'prop-types'
+
+  
 
 const AddTask = ({ onAdd }) => {
-    const[text, setText] =useState("")
-    const[day, setDay] =useState("")
+    const[text, setText] = useState("")
+    const[day, setDay] = useState("")
     const[reminder, setReminder] = useState(false)
 
     const onSubmit = (e) => {
@@ -31,7 +34,7 @@ const AddTask = ({ onAdd }) => {
             <label>Day & time</label>
             <input type="text" placeholder="add day & time" value={day} onChange={(e) => setDay(e.target.value)} />
         </div>
-        <div className="form-control" form-control-check >
+        <div className="form-control-check" form-control-check >
             <label>Reminder</label>
             <input type="checkbox" checked={reminder} value={reminder} onChange={(e) => setReminder(e.currentTarget.checked)} />
         </div>

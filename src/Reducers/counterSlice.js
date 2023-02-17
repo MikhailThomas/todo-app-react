@@ -1,19 +1,20 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 
-export const counterSlice = createSlice({
+export const tasksSlice = createSlice({
   name: 'tasks',
   initialState: [],
   reducers: {
-    AddTask: (state) => {
-      state.value += 1
+    AddTask: (state, action) => {
+      state.value.push(action.payload)
     },
-    DeleteTask: (state) => {
-      state.value = state.value - 1
+    DeleteTask: (state, action) => {
+      state.value.splice(action.payload, 1)
     },
     onToggle: (state) => {
         state.value = state.value - 1
       },
   },
 })
-export const { increment, decrement } = counterSlice.actions
-export default counterSlice.reducer
+export const { AddTask, DeleteTask, onToggle } = tasksSlice.actions
+export const select = (state) => state.tasks.value
+export default tasksSlice.reducer

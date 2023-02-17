@@ -7,9 +7,10 @@ function Button({color, text, onClick}) {
   )
 }
 
-Button.defaultProps = {
-    color: "steelblue",
-}
+// this is how you can set style as a prop
+// Button.defaultProps = {
+//     color: "steelblue",
+// }
 
 Button.propTypes = {
     text: PropTypes.string,
