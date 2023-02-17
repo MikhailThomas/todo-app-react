@@ -1,5 +1,5 @@
 import { useState } from "react"
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 
   
 
@@ -34,11 +34,10 @@ const AddTask = ({ onAdd }) => {
             <label>Day & time</label>
             <input type="text" placeholder="add day & time" value={day} onChange={(e) => setDay(e.target.value)} />
         </div>
-        <div className="form-control" form-control-check >
-            <label>Reminder</label>
+        <div className="form-control" form-control-check="true" >
+            <label>Completed (Double on click task to complete)</label>
             <input type="checkbox" checked={reminder} value={reminder} onChange={(e) => setReminder(e.currentTarget.checked)} />
         </div>
-
         <input type="submit" value="save task" className="btn btn-block" />
     </form>
   )

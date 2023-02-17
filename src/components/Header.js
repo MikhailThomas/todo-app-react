@@ -19,7 +19,7 @@ Header.propTypes = {
     title: PropTypes.string.isRequired
 }
 
-// css in JS
+// another way to do css in reactJS
 // const headingStyle = {
 //     color: "red", 
 //     backgroundColor: "black"
