@@ -1,16 +1,10 @@
 {
   "tasks": [
     {
-      "id": 2,
-      "text": "lets get drinks baba",
-      "day": "Feb 5th at 2:30pm",
-      "reminder": false
-    },
-    {
-      "id": 3,
-      "text": "lets get poker baba",
-      "day": "Feb 5th at 2:30pm",
-      "reminder": false
+      "text": "redasv",
+      "day": "readsv",
+      "reminder": false,
+      "id": 1
     }
   ]
 }
